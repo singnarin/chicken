@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   {!! Html::style('bootstrap/css/bootstrap.min.css') !!}
+  {!! Html::script('js/jquery.min.js') !!}
+  {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
 </head>
 <body>
   <div class="page-header" align="center">
@@ -18,7 +20,6 @@
       </div>
     </div>
   </div>
-  {!! Html::script('js/jquery.min.js') !!}
-  {!! Html::script('bootstrap/js/bootstrap.min.css') !!}
+
 </body>
 </html>

@@ -12,6 +12,13 @@
 */
 
 Route::get('/', 'SiteController@index');
-Route::any('userTypeForm/{id?}', 'UserTypeController@form');
 Route::get('userType', 'UserTypeController@index');
 Route::get('userTypeDelete/{id}', 'UserTypeController@delete');
+Route::any('userTypeForm/{id?}', 'UserTypeController@form');
+Route::get('user', 'UserController@index');
+Route::get('userDelete/{id}', 'UserController@delete');
+Route::any('userForm/{id?}', 'UserController@form');
+Route::get('farm', 'FarmController@index');
+Route::get('farmDelete/{id}', 'FarmController@delete');
+Route::any('farmForm/{id?}', 'farmController@form');
+Route::get('orderBaby', 'OrderController@orderBaby');
