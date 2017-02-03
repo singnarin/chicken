@@ -1,19 +1,19 @@
 @extends('layouts.master')
 @section('content')
-<h1>Order Baby</h1>
-{!! Html::link('orderBabyForm', 'Add Order', array('class'=>'btn btn-primary')) !!}
+<h1>Order Food</h1>
+{!! Html::link('orderFoodForm', 'Add Order', array('class'=>'btn btn-primary')) !!}
 
 <table class="table table=bordered table-chicken">
   <thead>
     <tr>
-      <th>Farm</th>
+      <th>Name</th>
       <th>Amount</th>
       <th>Approve</th>
     </tr>
     <tbody>
-      @foreach($orderBaby as $value)
+      @foreach($orderFood as $value)
         <tr>
-          <td>{{$value->farm->name}}</td>
+          <td>{{$value->name}}</td>
           <td>{{$value->amount}}</td>
           <td>{{$value->approved}}</td>
         </tr>
