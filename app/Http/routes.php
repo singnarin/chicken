@@ -40,3 +40,7 @@ Route::any('growthForm/{id?}', 'ChickenController@growthForm');
 Route::any('killList/{id?}', 'ChickenController@killList');
 Route::get('kill/{id?}', 'ChickenController@kill');
 Route::get('totalBaby', 'ReportController@totalBaby');
+Route::get('totalBig', 'ReportController@totalBig');
+Route::get('totalForKill', 'ReportController@totalForKill');
+Route::get('totalKill', 'ReportController@totalKill');
+Route::get('totalSale', 'ReportController@totalSale');

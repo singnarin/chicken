@@ -9,6 +9,13 @@ use App\Http\Requests;
 class SiteController extends Controller
 {
     public function index(){
-      return View('site.index');
+      $user = Session::get('user');
+      if(!empty($user)){
+        return View('site.index');
+      }
+    }
+
+    public   function loginForm(){
+      return View:('site.loginForm');
     }
 }
