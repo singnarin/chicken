@@ -44,3 +44,6 @@ Route::get('totalBig', 'ReportController@totalBig');
 Route::get('totalForKill', 'ReportController@totalForKill');
 Route::get('totalKill', 'ReportController@totalKill');
 Route::get('totalSale', 'ReportController@totalSale');
+Route::get('loginForm', 'SiteController@loginForm');
+Route::post('login', 'SiteController@login');
+Route::get('logout', 'SiteController@logout');

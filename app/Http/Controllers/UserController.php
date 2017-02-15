@@ -5,21 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\User;
+use App\Users;
 
 class UserController extends Controller
 {
     public function index(){
-      $user = User::all();
+      $user = Users::all();
       return View('user.index')
        ->with('user', $user);
     }
 
     public function form(Request $request, $id = null){
       if(empty($id)){
-        $user = new User;
+        $user = new Users;
       }else{
-        $user = User::find($id);
+        $user = Users::find($id);
       }
 
       if($request->all()){
@@ -37,7 +37,7 @@ class UserController extends Controller
 
     public function delete($id=null){
       if(!empty($id)){
-        User::destroy($id);
+        Users::destroy($id);
         return Redirect('user');
       }
     }

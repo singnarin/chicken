@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 Use App\UserType;
 
-class User extends Model
+class Users extends Model
 {
     public $timestamps = false;
     public function userType(){

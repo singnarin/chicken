@@ -6,7 +6,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.php">Home</a></li>
-      @if(@user[0]->user_type_id == 4)
+      @if(@$user[0]->user_type_id == 4)
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings
         <span class="glyphicon glyphicon-cog"></span></a>
@@ -17,7 +17,7 @@
         </ul>
       </li>
       @endif
-      @if(@user[0]->user_type_id == 2)
+      @if(@$user[0]->user_type_id == 2)
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders
         <span class="glyphicon glyphicon-book"></span></a>
@@ -28,7 +28,7 @@
         </ul>
       </li>
       @endif
-      @if(@user[0]->user_type_id == 1)
+      @if(@$user[0]->user_type_id == 1)
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chicken
         <span class="	glyphicon glyphicon-th"></span></a>
@@ -39,7 +39,7 @@
         </ul>
       </li>
       @endif
-      @if(@user[0]->user_type_id == 3)
+      @if(@$user[0]->user_type_id == 3)
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manager
         <span class="glyphicon glyphicon-user"></span></a>
@@ -66,7 +66,7 @@
       @if(empty($user[0]->name))
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
       @else
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       @endif
     </ul>
   </div>

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\UserType;
-use App\User;
+use App\Users;
 
 class UserTypeController extends Controller
 {
